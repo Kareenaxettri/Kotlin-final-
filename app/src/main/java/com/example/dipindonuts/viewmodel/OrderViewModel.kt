@@ -25,7 +25,7 @@ class OrderViewModel @Inject constructor(
     private val _sellerOrdersState = MutableStateFlow<OrdersState>(OrdersState.Loading)
     val sellerOrdersState: StateFlow<OrdersState> = _sellerOrdersState.asStateFlow()
     
-    //private val _orderCreationState = MutableStateFlow<OrderCreationState>(OrderCreationState.Idle)
+    private val _orderCreationState = MutableStateFlow<OrderCreationState>(OrderCreationState.Idle)
     val orderCreationState: StateFlow<OrderCreationState> = _orderCreationState.asStateFlow()
     
     fun loadUserOrders(userId: String) {
@@ -116,5 +116,5 @@ sealed class OrderCreationState {
     object Idle : OrderCreationState()
     object Loading : OrderCreationState()
     data class Success(val orderId: String) : OrderCreationState()
-    data class Error(val message: String) : OrderCreationState()
+    //data class Error(val message: String) : OrderCreationState()
 } 
