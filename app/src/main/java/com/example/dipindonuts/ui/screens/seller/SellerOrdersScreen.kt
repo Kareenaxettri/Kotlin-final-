@@ -1,4 +1,4 @@
-package com.example.dipindonuts.ui.screens.seller
+//package com.example.dipindonuts.ui.screens.seller
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
