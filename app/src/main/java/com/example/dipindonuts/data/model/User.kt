@@ -11,5 +11,5 @@ data class User(
 
 enum class UserRole {
     BUYER,
-    SELLER
+    //SELLER
 } 
