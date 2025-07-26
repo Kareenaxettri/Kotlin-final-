@@ -90,5 +90,5 @@ class CartViewModel @Inject constructor(
 sealed class CartState {
     object Loading : CartState()
     data class Success(val items: List<CartItem>, val total: Double) : CartState()
-    //data class Error(val message: String) : CartState()
+    data class Error(val message: String) : CartState()
 } 
