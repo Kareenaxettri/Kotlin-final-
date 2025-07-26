@@ -69,7 +69,7 @@ fun ProductDetailScreen(
     var showSnackbar by remember { mutableStateOf(false) }
     var snackbarMessage by remember { mutableStateOf("") }
     
-    val currentUser by authViewModel.currentUser.collectAsState()
+    //val currentUser by authViewModel.currentUser.collectAsState()
     val snackbarHostState = remember { SnackbarHostState() }
     
     LaunchedEffect(productId) {
