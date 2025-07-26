@@ -26,5 +26,5 @@ enum class OrderStatus {
     PREPARING,
     READY_FOR_PICKUP,
     DELIVERED,
-    CANCELLED
+    //CANCELLED
 } 
