@@ -30,7 +30,7 @@ fun DipInDonutsNavigation(
     authViewModel: AuthViewModel = hiltViewModel()
 ) {
     val currentUser by authViewModel.currentUser.collectAsState()
-//    val authState by authViewModel.authState.collectAsState()
+     val authState by authViewModel.authState.collectAsState()
     
     NavHost(
         navController = navController,
