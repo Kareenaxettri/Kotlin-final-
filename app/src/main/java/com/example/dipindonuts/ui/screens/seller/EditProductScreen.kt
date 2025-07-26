@@ -101,7 +101,7 @@ fun EditProductScreen(
     val snackbarHostState = remember { SnackbarHostState() }
     val context = LocalContext.current
     
-    val categories = listOf(
+    //val categories = listOf(
         "Glazed", "Chocolate", "Strawberry", "Vanilla", "Maple", 
         "Blueberry", "Raspberry", "Caramel", "Cinnamon", "Specialty"
     )
