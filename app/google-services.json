@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1087481534771",
+    "project_id": "dip-in-donuts",
+    "storage_bucket": "dip-in-donuts.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087481534771:android:dac6e6238b2bd55b520646",
+        "android_client_info": {
+          "package_name": "com.example.dipindonuts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkFiHnIzRl5tAzR67i2t8s75GAD704LRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
