@@ -49,9 +49,9 @@ fun LoginScreen(
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var isLoading by remember { mutableStateOf(false) }
-    var errorMessage by remember { mutableStateOf("") }
+//    var errorMessage by remember { mutableStateOf("") }
     
-    val authState by authViewModel.authState.collectAsState()
+     val authState by authViewModel.authState.collectAsState()
     
     LaunchedEffect(authState) {
         when (authState) {
