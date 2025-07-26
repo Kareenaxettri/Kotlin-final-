@@ -66,11 +66,11 @@ fun CartScreen(
 ) {
     val cartState by cartViewModel.cartState.collectAsState()
     val currentUser by authViewModel.currentUser.collectAsState()
-    val snackbarHostState = remember { SnackbarHostState() }
+    //val snackbarHostState = remember { SnackbarHostState() }
     
     var showSnackbar by remember { mutableStateOf(false) }
     var snackbarMessage by remember { mutableStateOf("") }
-    
+
     LaunchedEffect(Unit) {
         currentUser?.let { user ->
             cartViewModel.loadCartItems(user.id)
