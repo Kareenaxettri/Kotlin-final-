@@ -64,7 +64,7 @@ fun CheckoutScreen(
     orderViewModel: OrderViewModel = hiltViewModel(),
     authViewModel: AuthViewModel = hiltViewModel()
 ) {
-    var customerName by remember { mutableStateOf("") }
+    //var customerName by remember { mutableStateOf("") }
     var customerPhone by remember { mutableStateOf("") }
     var deliveryAddress by remember { mutableStateOf("") }
     var showSnackbar by remember { mutableStateOf(false) }
