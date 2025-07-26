@@ -67,7 +67,7 @@ fun SellerHomeScreen(
     authViewModel: AuthViewModel = hiltViewModel()
 ) {
     val sellerProductsState by productViewModel.sellerProductsState.collectAsState()
-    //val currentUser by authViewModel.currentUser.collectAsState()
+    val currentUser by authViewModel.currentUser.collectAsState()
     
     LaunchedEffect(currentUser) {
         currentUser?.let { user ->
