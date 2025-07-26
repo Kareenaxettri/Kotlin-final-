@@ -1,4 +1,4 @@
-package com.example.dipindonuts.ui.screens.auth
+//package com.example.dipindonuts.ui.screens.auth
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -40,7 +40,7 @@ fun SplashScreen(
     onNavigateToLogin: () -> Unit,
     onNavigateToHome: (User) -> Unit
 ) {
-    var startAnimation by remember { mutableStateOf(false) }
+   var startAnimation by remember { mutableStateOf(false) }
     val scale by animateFloatAsState(
         targetValue = if (startAnimation) 1f else 0f,
         animationSpec = tween(durationMillis = 1000),
