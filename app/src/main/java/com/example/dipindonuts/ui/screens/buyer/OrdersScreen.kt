@@ -55,7 +55,7 @@ fun OrdersScreen(
     orderViewModel: OrderViewModel = hiltViewModel(),
     authViewModel: AuthViewModel = hiltViewModel()
 ) {
-    val userOrdersState by orderViewModel.userOrdersState.collectAsState()
+    //val userOrdersState by orderViewModel.userOrdersState.collectAsState()
     val currentUser by authViewModel.currentUser.collectAsState()
     
     LaunchedEffect(Unit) {
