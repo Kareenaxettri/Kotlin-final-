@@ -72,7 +72,7 @@ fun BuyerHomeScreen(
     cartViewModel: CartViewModel = hiltViewModel(),
     authViewModel: AuthViewModel = hiltViewModel()
 ) {
-    //val productsState by productViewModel.productsState.collectAsState()
+    val productsState by productViewModel.productsState.collectAsState()
     val cartState by cartViewModel.cartState.collectAsState()
     val currentUser by authViewModel.currentUser.collectAsState()
     val snackbarHostState = remember { SnackbarHostState() }
