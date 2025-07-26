@@ -1,4 +1,4 @@
-//package com.example.dipindonuts.ui.theme
+package com.example.dipindonuts.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
