@@ -68,7 +68,7 @@ class CartRepository @Inject constructor(
             batch.commit().await()
             Result.success(Unit)
         } catch (e: Exception) {
-            //Result.failure(e)
+            Result.failure(e)
         }
     }
 } 
