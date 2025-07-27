@@ -76,7 +76,7 @@ class ProductRepository @Inject constructor(
             val product = document.toObject(Product::class.java)?.copy(id = document.id)
             Result.success(product)
         } catch (e: Exception) {
-            //Result.failure(e)
+            Result.failure(e)
         }
     }
 } 
