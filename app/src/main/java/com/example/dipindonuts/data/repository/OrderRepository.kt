@@ -76,7 +76,7 @@ class OrderRepository @Inject constructor(
             val order = document.toObject(Order::class.java)?.copy(id = document.id)
             Result.success(order)
         } catch (e: Exception) {
-           // Result.failure(e)
+            Result.failure(e)
         }
     }
 } 
